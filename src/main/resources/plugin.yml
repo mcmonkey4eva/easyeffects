@@ -1,0 +1,17 @@
+name: EasyEffects
+author: mcmonkey
+version: ${project.version}
+main: org.mcmonkey.easyeffects.EasyEffects
+
+commands:
+  particle:
+    description: Opens the particle effect menu.
+    usage: /particle
+    permission: easyeffects.particle
+
+permissions:
+  easyeffects.*:
+    description: Gives access to the Easy Effect system
+    default: op
+    children:
+      easyeffects.particle: true
